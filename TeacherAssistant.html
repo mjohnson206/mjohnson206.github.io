@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
+  </head>
+
+<body>
+    <div class="navBar">
+        <a id="nav" href="index.html">Home</a>  
+        <a id="nav" href="About us.html">About Us</a> 
+        <a id="nav" id="currentPage" href="College Activites.html">College Activites</a>
+        
+        <div class="dropdown"> <a>Extras</a>
+            <div class="dropdown-content">
+                <a id="extraPage" href="information.html">Information</a>
+            </div>
+        </div>
+        <a id="nav" id="currentPage" href="http://ccse.kennesaw.edu/it"><img style="height: 25px;"src="img/6843.png"></img>IT</a>
+    </div>
+<h1>Teacher Assistant</h1>
+<div >
+    <img src="img/Untitled.png"></img>
+</div>
+<div class="TAInfo">
+    <p>Courses</p>
+    <input type="button" value="Graduate" onclick="getLevel()" id="getGrad"><br>
+    <div id="infoC">  
+        <label>CSE 3203 Mobile System Overview</label>
+        <input for="Course" id="CSE"></input><br>
+        <label>IT 4213 Mobile Web Development</label>
+        <input for="Course" id="IT4213"></input><br> 
+        <label>IT 4312 Software Development</label>
+        <input for="Course" id="IT4312"></input><br> 
+        <!--
+            Create JavaScript code to add Course textbox on button click
+            letter grade textbox should be added on click as well
+        --> 
+    </div>  
+    <div id="infoG">  
+        <label>IT 7113 Data Visualization</label>
+        <input for="Course" id="CSE"></input><br>
+        <label>IT 4213 Mobile Web Development</label>
+        <input for="Course" id="IT4213"></input><br>  
+        <label>IT 8923 Computer Systems</label>
+        <input for="Course" id="IT4213"></input><br>  
+        <!--
+            Create JavaScript code to add Course textbox on button click
+            letter grade textbox should be added on click as well
+        --> 
+    </div> 
+    <input type="button" value="Submit" onclick="getGrades()"><br>
+    <p id="eligible">
+    </p>
+    <table style="width:100%">
+        <tr>
+            <th>Student status</th>
+            <th>Courses Required Completion</th>
+            <th>Grade average requirement (for the four courses required)</th>
+        </tr>
+        <tr id="underTable">
+            <td>Undergraduate</td>
+            <td><ol style="margin-left: -25px;">
+                <li>CSE 3203 Mobile System Overview</li>
+                <li>IT 4213 Mobile Web Development</li>
+                <li>IT 4312 Software Development</li> 
+            </ol></td>
+            <td>Grade average requirement (for the four courses required)
+                <p>3.0 or higher</p>
+            </td>
+        </tr> 
+        <tr id="gradTable">
+            <td>Graduate</td>
+            <td><ol style="margin-left: -25px;">
+                <li>CSE 3203 Mobile System Overview</li>
+                <li>IT 6713 Business Intelligence</li>
+            </ol></td>
+            <td>Grade average requirement (for the four courses required)
+                 <p>3.5 or higher</p>
+                </td>
+        </tr>
+</div>
+</body>
+</html>
